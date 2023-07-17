@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CSE 134B HW 2</title>
+    <style>
+        .lakers-shrine{
+            border: 3px outset gold
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("tempCanvas");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(50, 30, 20, 10);
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Brian Tran's Website</h1>
+    </header>
+    
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#about">About Brian</a></li>
+                <li><a href="/Brian Tran Resume.pdf" target="_blank"> Brian's Resume!</a></li>
+            </ul>
+        </nav>
+
+        <div class = "lakers-shrine">
+            <h2>Here is my mini Laker's shrine</h2>
+            <figure>
+                <img src="images, gifs, audios, videos/Austin Reaves.jpg" alt="Austin Reaves With That Dog" height="700" width="500"/>
+                <figcaption><i>This is Austin Reaves, starting guard for the Lakers with that dog in him.</i></figcaption>
+            </figure>
+            <audio controls>
+                <source src="/images, gifs, audios, videos/Meme Origin - Lebron James - 'Come On, Man. That's Too Easy!' (Original Video).mp3" type="audio/mp3">
+            </audio><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xrYKwUYnI8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <details>
+            <summary>About Brian</summary>
+            <section id = "about">
+                <h3>About Brian</h3>
+                <pre><b>            Brian was Born and Raised in Santa Ana California, and is currently taking his 5th year as an 
+                Electrical and Computer Engineering major at UCSD. He is an avid Basketball fan, with his favorite team being 
+                the Los Angeles Lakers. Brian first started learning computer science as a freshman, and his first line of code was:</b></pre>
+                <code>system.out.println("Hello World!")</code><br>
+                <aside>
+                    <p>I honestly don't know what to say in here but I am using aside here</p>
+                </aside>
+                <strong><em>I also like watching these videos every once in a while.</em><br></strong>
+                <video controls>
+                    <source src="/images, gifs, audios, videos/Pokémon's 179th episode in about 3 minutes.mp4" type="video/mp4">
+                </video><br>
+                <strong>my favorite pokemon:</strong><br>
+                <picture>
+                    <img src="/images, gifs, audios, videos/2437349-pikachu.png" type="images/png" height="500" width="500">
+                </picture>
+            </section>
+        </details>
+        <hr>
+        <table>
+            <colgroup>
+                <col span="1">
+            </colgroup>
+            <caption>Brian's Favorite Players</caption>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Kobe Bryant</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>No one</td>
+            </tr>
+        </table>
+        <p> instead of using a table, i can also use a list for this:</p>
+        <ol>
+            <li>Kobe Bryant</li>
+            <li>No One</li>
+        </ol>
+        <form>
+            <label for="Language">What is your preferred Programming Language:</label>
+            <input list="Languages" name="Language" id="Language">
+            <datalist id="Languages">
+                <option value="HTML">
+                <option value="C++">
+                <option value="Java">
+                <option value="Python">
+                <option value="Other">
+            </datalist>
+            <button type="submit">Submit!</button>
+        </form>
+
+        <form action>
+            <label for="food">Now what is your favorite food:</label>
+            <select name="food" id="food">
+                <optgroup label="Fruits">
+                    <option value="banana">banana</option>
+                    <option value="strawberry">strawberry</option>
+                    <option value="apple">apple</option>
+                </optgroup>
+                <optgroup label="appetizers">
+                    <option value="fries">fries</option>
+                    <option value="bread">bread</option>
+                    <option value="popcorn chicken">popcorn chicken</option>
+                    <option value="charcuterie board">charcuterie board</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Tell me about yourself!:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="favorite color">Favorite Color:</label>
+                    <input type="Favorite Color" id="Favorite Color" name="Favorite Color"><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50">Tell me about yourself!</textarea>
+            <button type="submit">Submit!</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <canvas id="tempCanvas">
+        browser does not support canvas tag.
+    </canvas>
+
+    <svg width="100" height="100">
+        <circle cx="53" cy="53" r="53" fill="green" />
+    </svg>
+</body>
+
+<footer>
+    <p>💯This page was made with &hearts; by Brian Tran 💯</p>
+    <b>contact me:</b>
+    <p>bgtran001@gmail.com</p>
+    <template>
+        <!-- temp placeholder for contact -->
+        <a href="https://www.linkedin.com/in/briangtran/">LinkedIn</a>
+    </template>
+</footer>
+
+</html>
