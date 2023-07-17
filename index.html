@@ -48,6 +48,7 @@
             <summary>About Brian</summary>
             <section id = "about">
                 <h3>About Brian</h3>
+                caption>Learning about Brian</caption>
                 <pre><b>            Brian was Born and Raised in Santa Ana California, and is currently taking his 5th year as an 
                 Electrical and Computer Engineering major at UCSD. He is an avid Basketball fan, with his favorite team being 
                 the Los Angeles Lakers. Brian first started learning computer science as a freshman, and his first line of code was:</b></pre>
@@ -66,10 +67,9 @@
             </section>
         </details>
         <hr>
-        <caption>Brian's Favorite Players</caption>
         <table>
             <colgroup>
-                <col span="1">
+                <col span="10">
             </colgroup>
             <tr>
               <th>Rank</th>
@@ -89,7 +89,7 @@
             <li>Kobe Bryant</li>
             <li>No One</li>
         </ol>
-        <form>
+        <form action="submit" method="get">
             <label for="Language">What is your preferred Programming Language:</label>
             <input list="Languages" name="Language" id="Language">
             <datalist id="Languages">
@@ -102,7 +102,7 @@
             <button type="submit">Submit!</button>
         </form>
 
-        <form action>
+        <form action="submit" method="get">
             <label for="food">Now what is your favorite food:</label>
             <select name="food" id="food">
                 <optgroup label="Fruits">
@@ -120,7 +120,7 @@
             <input type="submit" value="Submit">
         </form>
 
-        <form>
+        <form action="submit" method="get">
             <fieldset>
                 <legend>Tell me about yourself!:</legend>
                     <label for="fname">First name:</label>
@@ -129,8 +129,8 @@
                     <input type="text" id="lname" name="lname"><br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email"><br>
-                    <label for="favorite color">Favorite Color:</label>
-                    <input type="Favorite Color" id="Favorite Color" name="Favorite Color"><br>
+                    <label for="favorite-color">Favorite Color:</label>
+                    <input type="Favorite Color" id="Favorite-Color" name="Favorite Color"><br>
                     <label for="birthday">Birthday:</label>
                     <input type="date" id="birthday" name="birthday"><br>
                     <textarea id="w3review" name="w3review" rows="4" cols="50">Tell me about yourself!</textarea>
